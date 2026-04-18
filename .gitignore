@@ -1,0 +1,8 @@
+# 忽略編譯後的執行檔
+booking-service-go
+*.exe
+*.os
+*.dylib
+
+# 忽略環境變數檔
+.env
