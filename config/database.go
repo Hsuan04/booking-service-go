@@ -16,6 +16,7 @@ var DB *gorm.DB
 func ConnectDatabase() {
 	// 取得在 Zeabur 設定的連線DB的環境變數
 	dsn := os.Getenv("DATABASE_URL")
+	fmt.Printf("嘗試連線的 DSN: %s\n", dsn)
 	if dsn == "" {
 		log.Fatal("DATABASE_URL 未設定，請檢查環境變數")
 	}
