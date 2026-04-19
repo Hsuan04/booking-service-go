@@ -1,8 +1,21 @@
-# 忽略編譯後的執行檔
+.env*
+!.env.example
 booking-service-go
+/bin/
 *.exe
-*.os
-*.dylib
+*.out
 
-# 忽略環境變數檔
-.env
+# 依賴套件
+vendor/
+
+# Go 工具產生的快取
+.cache/
+
+# 編輯器相關 (VS Code / JetBrains)
+.vscode/
+.idea/
+*.swp
+
+# OS 產生的檔案
+.DS_Store
+Thumbs.db
