@@ -1,5 +1,5 @@
 # 第一階段：編譯階段 (Builder)
-FROM golang:1.22-alpine AS builder
+FROM golang:1.25-alpine AS builder
 
 # 安裝憑證與基本工具（確保之後能正常連線到 Supabase 等外部服務）
 RUN apk add --no-cache ca-certificates && update-ca-certificates
